@@ -18,6 +18,11 @@
             rel="stylesheet">
         <link rel="stylesheet" href="style.css">
 
+        <!-- fontawsome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     </head>
 
     <body>
@@ -55,25 +60,31 @@
             <button type="button" class="btn btn-primary">Aggiungi Libro</button>
         </div>
         <!-- table -->
-        <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th scope="col">Titolo</th>
-                    <th scope="col">Data prestito</th>
-                    <th scope="col">Stato</th>
-                    <th scope="col">Azioni</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>I pilastri della terra</td>
-                    <td>-</td>
-                    <td>Disponibile</td>
-                    <td>å</td>
-                </tr>
-            </tbody>
-        </table>
-
+        <div class="container">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Titolo</th>
+                        <th scope="col" class="d-none d-sm-block">Data prestito</th>
+                        <th scope="col">Stato</th>
+                        <th scope="col" class="text-center">Azioni</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>I pilastri della terra</td>
+                        <td class="d-none d-sm-block">-</td>
+                        <td><span class="badge text-bg-success">Disponibile</span></td>
+                        <td>
+                            <div class="container text-center">
+                                <button class="btn btn-outline-secondary">+</button>
+                                <button class="btn btn-outline-secondary">-</button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </body>
 
 </html>
